@@ -1,0 +1,40 @@
+{
+  "connection": "default",
+  "collectionName": "design_works",
+  "info": {
+    "name": "design_work"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "thumbnail": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "images": {
+      "collection": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "paragraph1": {
+      "type": "richtext"
+    },
+    "date": {
+      "type": "date"
+    },
+    "paragraph2": {
+      "type": "richtext"
+    }
+  }
+}
