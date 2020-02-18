@@ -9,10 +9,10 @@
     "timestamps": true
   },
   "attributes": {
-    "title": {
+    "projectTitle": {
       "type": "string"
     },
-    "description": {
+    "paragraph1": {
       "type": "richtext"
     },
     "thumbnail": {
@@ -21,20 +21,44 @@
       "plugin": "upload",
       "required": false
     },
-    "images": {
-      "collection": "file",
-      "via": "related",
-      "plugin": "upload",
-      "required": false
-    },
-    "paragraph1": {
+    "paragraph2": {
       "type": "richtext"
     },
     "date": {
       "type": "date"
     },
-    "paragraph2": {
+    "paragraph3": {
       "type": "richtext"
+    },
+    "title1": {
+      "type": "string",
+      "default": "Description"
+    },
+    "title2": {
+      "type": "string",
+      "default": "Problem"
+    },
+    "image1": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "image2": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "image3": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "title3": {
+      "type": "string",
+      "default": "Solution"
     }
   }
 }
